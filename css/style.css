@@ -92,3 +92,49 @@ a {
   font-family: "Mulish", sans-serif;
   text-transform: uppercase;
 }
+.header-navigation_showmobil {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .header-conteiner {
+    padding: 41px 34px;
+  }
+  .header-top__logo {
+    font-size: 18px;
+  }
+  .nav-link {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header-top__logo {
+    font-size: 13, 42px;
+  }
+  .search {
+    display: none;
+  }
+  .user {
+    visibility: hidden;
+    display: none;
+  }
+  .header-navigator-conteiner {
+    visibility: hidden;
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header-top__logo {
+    font-size: 13, 42px;
+  }
+  .search {
+    display: none;
+  }
+  .user {
+    visibility: hidden;
+    display: none;
+  }
+  .header-navigator-conteiner {
+    visibility: hidden;
+    display: none;
+  }
+}
