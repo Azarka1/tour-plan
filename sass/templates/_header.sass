@@ -1,6 +1,7 @@
 .header-conteiner
-  padding: 40px 165px
-
+  padding: 40px 145px
+  @media screen and ( max-width: 768px )
+    padding: 40px 70px
 .header-top
   display: flex
   justify-content: space-between
@@ -9,11 +10,16 @@
   &__logo
     font-family: LuckiestGuy-Regular
     font-size: 24px
+    @media screen and ( max-width:786px  )
+      font-size: 18px
+      @media screen and ( max-width: 480px )
+        font-size: 13px
+
 .logo-black
   color: #333333
 
 .logo-red
-  color: #ec1f46
+  color: $color_red
 
 a
   text-decoration: none
@@ -21,12 +27,14 @@ a
 .search
   display: flex
   justify-content: flex-start
+  @media screen and ( max-width:480px )
+    display: none
 
   &__input
     background: #f5fafe
     border: none
     font-size: 12px
-    font-family: "Mulish", sans-serif
+    font-family: $type_text
     border-radius: 6px 0 0 6px
     padding-left: 18px
 
@@ -34,7 +42,7 @@ a
     height: 40px
     width: 65px
     display: block
-    background: #ec1f46
+    background: $color_red
     border: none
     border-radius: 0 6px 6px 0
 
@@ -60,8 +68,12 @@ a
     object-fit: cover
 
   &-name
-    font-family: "Mulish", sans-serif
+    font-family: $type_text
     font-size: 14px
+
+.header-navigator-conteiner
+  @media screen and ( max-width: 768px )
+    font-size: 11px
 .header-navigation
   display: flex
   justify-content: space-evenly
@@ -71,7 +83,7 @@ a
 
 .nav-link
   color: white
-  font-family: "Mulish", sans-serif
+  font-family: $type_text
   text-transform: uppercase
 
 .header-navigation_showmobil
