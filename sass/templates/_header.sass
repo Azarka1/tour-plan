@@ -1,20 +1,29 @@
 .header-conteiner
-  padding: 40px 145px
+  padding-top: 40px
+  padding-bottom: 40px
+  width: 1110px
+  margin: auto
   @media screen and ( max-width: 768px )
-    padding: 40px 70px
+    width: 80%
+  @media screen and ( max-width: 1140px )
+    width: 80%
 .header-top
   display: flex
   justify-content: space-between
   align-items: center
-
+  margin: auto
   &__logo
     font-family: LuckiestGuy-Regular
     font-size: 24px
+    margin-right: 108px
+    @media screen and ( max-width:992px  )
+      margin-right: 47px
     @media screen and ( max-width:786px  )
       font-size: 18px
-      @media screen and ( max-width: 480px )
+      @media screen and ( max-width: 555px )
         font-size: 13px
-
+.header-top-logo-search
+  display: inline-flex
 .logo-black
   color: #333333
 
@@ -27,6 +36,11 @@ a
 .search
   display: flex
   justify-content: flex-start
+  position: relative
+  height: 40px
+  width: 350px
+  @media screen and ( max-width:992px )
+    width: 340px
   @media screen and ( max-width:480px )
     display: none
 
@@ -37,6 +51,7 @@ a
     font-family: $type_text
     border-radius: 6px 0 0 6px
     padding-left: 18px
+    width: 350px
 
   &__button
     height: 40px
@@ -45,6 +60,8 @@ a
     background: $color_red
     border: none
     border-radius: 0 6px 6px 0
+    position: absolute
+    right: 0
 
 .user
   display: flex
@@ -70,21 +87,36 @@ a
   &-name
     font-family: $type_text
     font-size: 14px
+    color: #333333
 
 .header-navigator-conteiner
   @media screen and ( max-width: 768px )
     font-size: 11px
+
 .header-navigation
+  margin: auto
+  background: #0A223D
+.conteiner
   display: flex
-  justify-content: space-evenly
+  justify-content: space-between
   align-items: center
-  background: #0a223d
+  margin: auto
+  width: 1110px
   height: 80px
+  @media screen and ( max-width: 1140px )
+    width: 80%
+    font-size: 14px
+    @media screen and ( max-width: 680px )
+      font-size: 9px
 
 .nav-link
   color: white
   font-family: $type_text
   text-transform: uppercase
-
+  font-size: 14px
+  @media screen and ( max-width: 870px )
+    font-size: 12px
+  @media screen and ( max-width: 680px )
+    font-size: 9px
 .header-navigation_showmobil
   display: none

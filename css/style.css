@@ -11,17 +11,14 @@
   font-weight: normal;
   font-style: normal;
 }
-@media screen and (max-width: 768px) {
-  .header-conteiner {
-    padding: 41px 34px;
-  }
-  .header-top__logo {
-    font-size: 18px;
-  }
-  .nav-link {
-    font-size: 12px;
-  }
+
+.header-top__logo {
+  font-size: 18px;
 }
+.nav-link {
+  font-size: 12px;
+}
+
 @media screen and (max-width: 480px) {
   .header-top__logo {
     font-size: 13, 42px;

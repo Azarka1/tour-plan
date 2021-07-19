@@ -4,12 +4,21 @@
 }
 
 .header-conteiner {
-  padding: 40px 145px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 1110px;
+  margin: auto;
 }
 
 @media screen and (max-width: 768px) {
   .header-conteiner {
-    padding: 40px 70px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .header-conteiner {
+    width: 80%;
   }
 }
 
@@ -23,11 +32,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: auto;
 }
 
 .header-top__logo {
   font-family: LuckiestGuy-Regular;
   font-size: 24px;
+  margin-right: 108px;
+}
+
+@media screen and (max-width: 992px) {
+  .header-top__logo {
+    margin-right: 47px;
+  }
 }
 
 @media screen and (max-width: 786px) {
@@ -36,10 +53,16 @@
   }
 }
 
-@media screen and (max-width: 786px) and (max-width: 480px) {
+@media screen and (max-width: 786px) and (max-width: 555px) {
   .header-top__logo {
     font-size: 13px;
   }
+}
+
+.header-top-logo-search {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .logo-black {
@@ -61,6 +84,15 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  position: relative;
+  height: 40px;
+  width: 350px;
+}
+
+@media screen and (max-width: 992px) {
+  .search {
+    width: 340px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -76,6 +108,7 @@ a {
   font-family: "Mulish", sans-serif;
   border-radius: 6px 0 0 6px;
   padding-left: 18px;
+  width: 350px;
 }
 
 .search__button {
@@ -85,6 +118,8 @@ a {
   background: #ec1f46;
   border: none;
   border-radius: 0 6px 6px 0;
+  position: absolute;
+  right: 0;
 }
 
 .user {
@@ -122,6 +157,7 @@ a {
 .user-name {
   font-family: "Mulish", sans-serif;
   font-size: 14px;
+  color: #333333;
 }
 
 @media screen and (max-width: 768px) {
@@ -131,23 +167,55 @@ a {
 }
 
 .header-navigation {
+  margin: auto;
+  background: #0A223D;
+}
+
+.conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #0a223d;
+  margin: auto;
+  width: 1110px;
   height: 80px;
+}
+
+@media screen and (max-width: 1140px) {
+  .conteiner {
+    width: 80%;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1140px) and (max-width: 680px) {
+  .conteiner {
+    font-size: 9px;
+  }
 }
 
 .nav-link {
   color: white;
   font-family: "Mulish", sans-serif;
   text-transform: uppercase;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 870px) {
+  .nav-link {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .nav-link {
+    font-size: 9px;
+  }
 }
 
 .header-navigation_showmobil {
