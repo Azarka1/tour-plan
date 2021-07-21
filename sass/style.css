@@ -66,6 +66,11 @@ a {
   width: 350px;
 }
 
+.search__img {
+  width: 18px;
+  height: 18px;
+}
+
 .search__input {
   background: #f5fafe;
   border: none;
@@ -91,7 +96,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 107px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .user-href {
@@ -150,6 +157,7 @@ a {
   font-family: "Mulish", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
+  font-weight: bold;
 }
 
 .header-navigation_showmobil {
@@ -508,22 +516,14 @@ template {
 @media screen and (max-width: 768px) {
   .header-conteiner {
     width: 80%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 28px;
+    padding-top: 28px;
   }
 }
 
-@media screen and (max-width: 768px) and (max-width: 680px) {
+@media screen and (max-width: 480px) {
   .header-conteiner {
-    height: 70px;
-    width: auto;
-  }
-}
-
-@media screen and (max-width: 786px) {
-  .header-top {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    width: 88%;
   }
 }
 
@@ -531,12 +531,6 @@ template {
   .header-top__logo {
     margin-right: 22px;
     font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 555px) {
-  .header-top__logo {
-    font-size: 13px;
   }
 }
 
@@ -608,13 +602,7 @@ template {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .header-navigator-conteiner {
-    font-size: 11px;
-  }
-}
-
-@media screen and (max-width: 768px) and (max-width: 680px) {
+@media screen and (max-width: 680px) {
   .header-navigator-conteiner {
     display: none;
   }
@@ -630,26 +618,18 @@ template {
 @media screen and (max-width: 1140px) and (max-width: 768px) {
   .conteiner {
     height: 60px;
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 1140px) and (max-width: 768px) and (max-width: 680px) {
-  .conteiner {
-    font-size: 9px;
   }
 }
 
 @media screen and (max-width: 870px) {
   .nav-link {
     font-size: 12px;
-    font-weight: bold;
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 870px) and (max-width: 768px) {
   .nav-link {
-    font-size: 9px;
+    font-weight: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
