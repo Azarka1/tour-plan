@@ -27,7 +27,6 @@
   font-family: LuckiestGuy-Regular;
   font-size: 24px;
   margin-right: 108px;
-  width: 177px;
 }
 
 .header-top-menu-burger {
@@ -509,19 +508,29 @@ template {
 @media screen and (max-width: 768px) {
   .header-conteiner {
     width: 80%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-width: 680px) {
+  .header-conteiner {
+    height: 70px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .header-top {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
 @media screen and (max-width: 992px) {
   .header-top__logo {
-    margin-right: 47px;
-  }
-}
-
-@media screen and (max-width: 786px) {
-  .header-top__logo {
+    margin-right: 22px;
     font-size: 18px;
-    width: 132px;
   }
 }
 
@@ -589,8 +598,6 @@ template {
 
 @media screen and (max-width: 768px) {
   .user {
-    width: 30px;
-    height: 30px;
     margin-right: 10px;
   }
 }
@@ -620,7 +627,14 @@ template {
   }
 }
 
-@media screen and (max-width: 1140px) and (max-width: 680px) {
+@media screen and (max-width: 1140px) and (max-width: 768px) {
+  .conteiner {
+    height: 60px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1140px) and (max-width: 768px) and (max-width: 680px) {
   .conteiner {
     font-size: 9px;
   }

@@ -3,14 +3,18 @@
     width: 80%
   @media screen and ( max-width: 768px )
     width: 80%
-
+    padding-top: 30px
+    padding-bottom: 30px
+    @media screen and ( max-width: 680px )
+      height: 70px
+      width: auto
 .header-top
+  @media screen and ( max-width:786px  )
+    justify-content: space-around
   &__logo
     @media screen and ( max-width:992px  )
-      margin-right: 47px
-    @media screen and ( max-width:786px  )
+      margin-right: 22px
       font-size: 18px
-      width: 132px
     @media screen and ( max-width: 555px )
       font-size: 13px
   &-menu-burger
@@ -44,8 +48,6 @@
     display: none
     .user-img
   @media screen and ( max-width:768px )
-    width: 30px
-    height: 30px
     margin-right: 10px
 .user-name
   @media screen and ( max-width:768px )
@@ -59,8 +61,11 @@
   @media screen and ( max-width: 1140px )
     width: 80%
     font-size: 14px
-    @media screen and ( max-width: 680px )
-      font-size: 9px
+    @media screen and ( max-width: 768px )
+      height: 60px
+      font-size: 12px
+      @media screen and ( max-width: 680px )
+        font-size: 9px
 .nav-link
   @media screen and ( max-width: 870px )
     font-size: 12px
