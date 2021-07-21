@@ -3,10 +3,7 @@
   padding-bottom: 40px
   width: 1110px
   margin: auto
-  @media screen and ( max-width: 768px )
-    width: 80%
-  @media screen and ( max-width: 1140px )
-    width: 80%
+
 .header-top
   display: flex
   justify-content: space-between
@@ -16,16 +13,14 @@
     font-family: LuckiestGuy-Regular
     font-size: 24px
     margin-right: 108px
-    @media screen and ( max-width:992px  )
-      margin-right: 47px
-    @media screen and ( max-width:786px  )
-      font-size: 18px
-      @media screen and ( max-width: 555px )
-        font-size: 13px
+    width: 177px
+  &-menu-burger
+    display: none
 .header-top-logo-search
   display: inline-flex
+  align-items: center
 .logo-black
-  color: #333333
+  color: $color_text
 
 .logo-red
   color: $color_red
@@ -39,10 +34,6 @@ a
   position: relative
   height: 40px
   width: 350px
-  @media screen and ( max-width:992px )
-    width: 340px
-  @media screen and ( max-width:480px )
-    display: none
 
   &__input
     background: #f5fafe
@@ -87,11 +78,7 @@ a
   &-name
     font-family: $type_text
     font-size: 14px
-    color: #333333
-
-.header-navigator-conteiner
-  @media screen and ( max-width: 768px )
-    font-size: 11px
+    color: $color_text
 
 .header-navigation
   margin: auto
@@ -103,20 +90,11 @@ a
   margin: auto
   width: 1110px
   height: 80px
-  @media screen and ( max-width: 1140px )
-    width: 80%
-    font-size: 14px
-    @media screen and ( max-width: 680px )
-      font-size: 9px
 
 .nav-link
   color: white
   font-family: $type_text
   text-transform: uppercase
   font-size: 14px
-  @media screen and ( max-width: 870px )
-    font-size: 12px
-  @media screen and ( max-width: 680px )
-    font-size: 9px
 .header-navigation_showmobil
   display: none

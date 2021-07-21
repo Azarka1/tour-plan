@@ -10,18 +10,6 @@
   margin: auto;
 }
 
-@media screen and (max-width: 768px) {
-  .header-conteiner {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 1140px) {
-  .header-conteiner {
-    width: 80%;
-  }
-}
-
 .header-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,30 +27,20 @@
   font-family: LuckiestGuy-Regular;
   font-size: 24px;
   margin-right: 108px;
+  width: 177px;
 }
 
-@media screen and (max-width: 992px) {
-  .header-top__logo {
-    margin-right: 47px;
-  }
-}
-
-@media screen and (max-width: 786px) {
-  .header-top__logo {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 786px) and (max-width: 555px) {
-  .header-top__logo {
-    font-size: 13px;
-  }
+.header-top-menu-burger {
+  display: none;
 }
 
 .header-top-logo-search {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo-black {
@@ -87,18 +65,6 @@ a {
   position: relative;
   height: 40px;
   width: 350px;
-}
-
-@media screen and (max-width: 992px) {
-  .search {
-    width: 340px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .search {
-    display: none;
-  }
 }
 
 .search__input {
@@ -160,12 +126,6 @@ a {
   color: #333333;
 }
 
-@media screen and (max-width: 768px) {
-  .header-navigator-conteiner {
-    font-size: 11px;
-  }
-}
-
 .header-navigation {
   margin: auto;
   background: #0A223D;
@@ -186,36 +146,11 @@ a {
   height: 80px;
 }
 
-@media screen and (max-width: 1140px) {
-  .conteiner {
-    width: 80%;
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 1140px) and (max-width: 680px) {
-  .conteiner {
-    font-size: 9px;
-  }
-}
-
 .nav-link {
   color: white;
   font-family: "Mulish", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
-}
-
-@media screen and (max-width: 870px) {
-  .nav-link {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 680px) {
-  .nav-link {
-    font-size: 9px;
-  }
 }
 
 .header-navigation_showmobil {
@@ -563,5 +498,144 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+@media screen and (max-width: 1140px) {
+  .header-conteiner {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-conteiner {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header-top__logo {
+    margin-right: 47px;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .header-top__logo {
+    font-size: 18px;
+    width: 132px;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .header-top__logo {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .header-top-menu-burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 16px;
+    height: 11px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    color: black;
+    background: inherit;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 680px) and (max-width: 680px) {
+  .header-top-menu-burger-line {
+    width: 16px;
+    height: 1px;
+    background: #333333;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .search {
+    width: 340px;
+  }
+}
+
+@media screen and (max-width: 992px) and (max-width: 768px) {
+  .search {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 992px) and (max-width: 680px) {
+  .search {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .user {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .user {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .user-name {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-navigator-conteiner {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-width: 680px) {
+  .header-navigator-conteiner {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .conteiner {
+    width: 80%;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1140px) and (max-width: 680px) {
+  .conteiner {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .nav-link {
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .nav-link {
+    font-size: 9px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
