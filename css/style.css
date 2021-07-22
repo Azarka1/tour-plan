@@ -11,27 +11,3 @@
   font-weight: normal;
   font-style: normal;
 }
-
-.header-top__logo {
-  font-size: 18px;
-}
-.nav-link {
-  font-size: 12px;
-}
-
-@media screen and (max-width: 480px) {
-  .header-top__logo {
-    font-size: 13, 42px;
-  }
-  .search {
-    display: none;
-  }
-  .user {
-    visibility: hidden;
-    display: none;
-  }
-  .header-navigator-conteiner {
-    visibility: hidden;
-    display: none;
-  }
-}
