@@ -164,6 +164,39 @@ a {
   display: none;
 }
 
+.bread {
+  display: block;
+  background: #F5FAFE;
+}
+
+.bread-conteiner {
+  margin: auto;
+  width: 1110px;
+}
+
+.bread-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 10px;
+  line-height: 13px;
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  height: 50px;
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bread-name-item:not(:last-child)::after {
+  content: "/";
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -509,15 +542,9 @@ template {
 
 @media screen and (max-width: 1140px) {
   .header-conteiner {
-    width: 80%;
+    width: 91%;
     padding-bottom: 30px;
     padding-top: 30px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .header-conteiner {
-    width: 91%;
   }
 }
 
@@ -599,7 +626,7 @@ template {
 
 @media screen and (max-width: 1140px) {
   .conteiner {
-    width: 80%;
+    width: 91%;
     font-size: 14px;
     height: 60px;
   }
@@ -614,6 +641,12 @@ template {
 @media screen and (max-width: 870px) and (max-width: 768px) {
   .nav-link {
     font-weight: none;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .bread-conteiner {
+    width: 91%;
   }
 }
 /*# sourceMappingURL=style.css.map */
