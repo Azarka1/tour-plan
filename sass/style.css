@@ -199,8 +199,8 @@ a {
 
 .main-article {
   background: #F5FAFE;
-  padding-top: 23px;
-  padding-bottom: 70px;
+  padding-top: 18px;
+  padding-bottom: 20px;
 }
 
 .main-article-conteiner {
@@ -306,6 +306,72 @@ a {
 
 .main-article-left {
   width: 389px;
+}
+
+.slider-main {
+  background: #F5FAFE;
+  display: block;
+  width: auto;
+}
+
+.slider-own {
+  width: 1100px;
+  margin: auto;
+}
+
+.slider-conteiner {
+  margin: 0;
+  padding-bottom: 70px;
+  width: 728px;
+}
+
+.swiper-container {
+  height: 450px;
+  width: auto;
+  margin: 0px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.swiper-container::after {
+  content: '';
+  position: absolute;
+  width: 728px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  z-index: 10;
+}
+
+.slider {
+  width: 728px;
+}
+
+.slider-button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: none;
+  top: 50%;
+  z-index: 99;
+  cursor: pointer;
+  margin-top: -15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  background-color: transparent;
+}
+
+.slider-button--next {
+  right: 18px;
+}
+
+.slider-button--prev {
+  left: 18px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -757,13 +823,13 @@ template {
 
 @media screen and (max-width: 1140px) {
   .bread-conteiner {
-    width: 91%;
+    width: 88%;
   }
 }
 
 @media screen and (max-width: 1140px) {
   .main-article-conteiner {
-    width: 91%;
+    width: 88%;
   }
 }
 
@@ -814,6 +880,24 @@ template {
 @media screen and (max-width: 768px) {
   .main-article-left-h {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .slider {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .slider-own {
+    width: 88%;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .slider-conteiner {
+    width: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
