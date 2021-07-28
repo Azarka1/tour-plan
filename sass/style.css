@@ -895,9 +895,17 @@ template {
   }
 }
 
-@media screen and (max-width: 1140px) {
-  .slider-conteiner {
-    width: auto;
+@media screen and (max-width: 768px) {
+  .swiper-container {
+    height: 180px;
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-slide img {
+    width: 88%px;
+    height: 180px;
   }
 }
 /*# sourceMappingURL=style.css.map */
