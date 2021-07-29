@@ -94,7 +94,7 @@
 .slider-own
   @media screen and ( max-width: 1140px )
     width: 88%
-
+    flex-wrap: wrap
 .swiper-container
   @media screen and ( max-width: 768px )
     height: 180px
@@ -103,3 +103,35 @@
   @media screen and ( max-width: 768px )
     width: 88%px
     height: 180px
+.card-map
+  @media screen and ( max-width: 1140px )
+    display: flex
+    justify-content: space-between
+    width: 728px
+    @media screen and ( max-width: 768px )
+      flex-direction: column
+.view
+  @media screen and ( max-width: 1140px )
+    margin-right: 20px
+    @media screen and ( max-width: 768px )
+      width: 279px
+      height: 210px
+      margin-right: 0px
+  &-first
+    width: auto
+  &-quick
+    width: auto
+  &-button
+    @media screen and ( max-width: 768px )
+      padding: 0
+      width: 235px
+      height: 45px
+.map-big
+  @media screen and ( max-width: 768px )
+    display: none
+.map-little
+  @media screen and ( max-width: 768px )
+    display: inline-flex
+.map
+  @media screen and ( max-width: 768px )
+    width: auto

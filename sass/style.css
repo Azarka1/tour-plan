@@ -199,7 +199,7 @@ a {
 
 .main-article {
   background: #F5FAFE;
-  padding-top: 18px;
+  padding-top: 23px;
   padding-bottom: 20px;
 }
 
@@ -317,12 +317,19 @@ a {
 .slider-own {
   width: 1100px;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .slider-conteiner {
   margin: 0;
-  padding-bottom: 70px;
+  padding-bottom: 30px;
   width: 728px;
+  margin-right: 30px;
 }
 
 .swiper-container {
@@ -372,6 +379,125 @@ a {
 
 .slider-button--prev {
   left: 18px;
+}
+
+.view {
+  width: 350px;
+  height: 210px;
+  padding: 28px;
+  background: #0A223D;
+  color: #FFFFFF;
+  border-radius: 8px;
+  margin-bottom: 27px;
+}
+
+.view-first {
+  width: 295px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+.view-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 86px;
+  margin: 0;
+  font-family: "Nunito-ExtraLight";
+  height: 59px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.view-left-start {
+  font-size: 10px;
+}
+
+.view-left-price {
+  font-family: "Nunito-Bold";
+  font-size: 24px;
+}
+
+.view-left-per {
+  font-size: 12px;
+}
+
+.view-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 80px;
+  margin: 0;
+  font-family: "Nunito-ExtraLight";
+  font-size: 12px;
+  height: 40px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.view-quick {
+  width: 295px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Nunito-Bold";
+  margin-bottom: 17px;
+  line-height: 25px;
+}
+
+.view-quick-booking {
+  font-size: 18px;
+}
+
+.view-quick-call {
+  font-size: 18px;
+}
+
+.view-button {
+  width: 295px;
+  padding: 13px 84px;
+  font-family: "Nunito-ExtraLight";
+  font-size: 14px;
+  color: #FFFFFF;
+  background: #ec1f46;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.view img {
+  margin-right: 9px;
+}
+
+.map {
+  width: 347px;
+  height: 213px;
+}
+
+.map-little {
+  display: none;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -892,6 +1018,8 @@ template {
 @media screen and (max-width: 1140px) {
   .slider-own {
     width: 88%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -906,6 +1034,77 @@ template {
   .swiper-slide img {
     width: 88%px;
     height: 180px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .card-map {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 728px;
+  }
+}
+
+@media screen and (max-width: 1140px) and (max-width: 768px) {
+  .card-map {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .view {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1140px) and (max-width: 768px) {
+  .view {
+    width: 279px;
+    height: 210px;
+    margin-right: 0px;
+  }
+}
+
+.view-first {
+  width: auto;
+}
+
+.view-quick {
+  width: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .view-button {
+    padding: 0;
+    width: 235px;
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .map-big {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .map-little {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .map {
+    width: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

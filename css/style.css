@@ -11,3 +11,18 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Nunito-Bold";
+  src: url("../fonts/Nunito-Bold.woff") format("woff"),
+    url("../fonts/Nunito-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito-ExtraLight";
+  src: url("../fonts/Nunito-ExtraLight.woff") format("woff"),
+    url("../fonts/Nunito-ExtraLight.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
