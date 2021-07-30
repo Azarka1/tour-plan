@@ -334,7 +334,7 @@ a {
 
 .swiper-container {
   height: 450px;
-  width: auto;
+  width: 728px;
   margin: 0px;
   position: relative;
   border-radius: 8px;
@@ -352,6 +352,10 @@ a {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
   background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
   z-index: 10;
+}
+
+.swiper-slide {
+  width: 728px;
 }
 
 .slider {
@@ -496,8 +500,94 @@ a {
   height: 213px;
 }
 
-.map-little {
-  display: none;
+.map-big {
+  width: 347px;
+  height: 213px;
+  border-radius: 10px;
+}
+
+.subscribe {
+  width: 100%;
+  background-image: url(../img/subcsribe.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.subscribe:before {
+  content: ' ';
+  background-color: rgba(10, 34, 61, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.subscribe-text {
+  padding: 98px 0 87px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Mulish", sans-serif;
+  width: 731px;
+  margin: auto;
+  position: relative;
+}
+
+.subscribe-text-info h2 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
+.subscribe-text-info span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.subscribe-input {
+  width: 285px;
+  height: 55px;
+  color: #BDBDBD;
+  padding: 18px 20px 19px 33px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 18px;
+  border-radius: 6px 0 0 6px;
+  border: none;
+}
+
+.subscribe-button {
+  height: 55px;
+  width: 65px;
+  background: #ec1f46;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  color: white;
+  font-size: 12px;
+  right: 0;
+  cursor: pointer;
+}
+
+.subscribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1023,6 +1113,19 @@ template {
   }
 }
 
+@media screen and (max-width: 1140px) {
+  .slider-conteiner {
+    margin-right: 0;
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .swiper-container {
+    width: 88%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .swiper-container {
     height: 180px;
@@ -1061,6 +1164,7 @@ template {
 @media screen and (max-width: 1140px) {
   .view {
     margin-right: 20px;
+    width: 340px;
   }
 }
 
@@ -1088,23 +1192,77 @@ template {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1140px) {
   .map-big {
-    display: none;
+    width: 340px;
+    height: 210px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .map-little {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+  .map-big {
+    width: 280px;
+    height: 172px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .map {
+    width: 340px;
+    height: 210px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .map {
-    width: auto;
+    width: 340px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .subscribe-text {
+    width: 88%;
+  }
+}
+
+@media screen and (max-width: 1140px) and (max-width: 768px) {
+  .subscribe-text {
+    width: 88%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subscribe-text-info {
+    margin-bottom: 37px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subscribe-text-info span {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subscribe-text-info h2 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subscribe-input {
+    width: 215px;
+    padding: 18px 131px 19px 33px;
   }
 }
 /*# sourceMappingURL=style.css.map */
