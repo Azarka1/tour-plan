@@ -1,0 +1,78 @@
+.reviews
+  width: auto
+  background: $color-bg
+  padding-top: 40px
+  padding-bottom: 70px
+  &-h3
+    margin: 0
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    font-family: $type-text
+    margin-bottom: 70px
+  &-main
+    width: 731px
+    height: 325px
+    margin: auto
+    position: relative
+    padding-top: 25px
+  &-info
+    height: 280px
+    background: #ffff
+    position: relative
+    &-block
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 97px
+      margin: auto
+      justify-content: flex-start
+      &-photo
+        width: 90px
+        height: 90px
+        border-radius: 50%
+        object-fit: cover
+        overflow: hidden
+        margin-top: -50px
+        margin-bottom: 9px
+      &-name
+        color: #EC1F46
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
+        font-family: $type-text
+        margin-bottom: 10px
+      &-date
+        font-weight: normal
+        font-size: 10px
+        line-height: 13px
+        font-family: $type-text
+        margin-bottom: 4px
+    &-text
+      width: 537px
+      height: 114px
+      text-align: justify
+      margin: auto
+      margin-top: 32px
+      font-size: 12px
+      font-family: $type-text
+      line-height: 160%
+
+  &-button
+    position: absolute
+    background: none
+    border: none
+    cursor: pointer
+    width: 30px
+    height: 30px
+    z-index: 99
+    &--prev
+      top: 0
+      left: -171px
+      bottom: 110px
+    &--next
+      top: 0
+      right: -171px
+      bottom: 110px

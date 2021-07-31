@@ -590,6 +590,117 @@ a {
   display: flex;
 }
 
+.reviews {
+  width: auto;
+  background: #F5FAFE;
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+.reviews-h3 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Mulish", sans-serif;
+  margin-bottom: 70px;
+}
+
+.reviews-main {
+  width: 731px;
+  height: 325px;
+  margin: auto;
+  position: relative;
+  padding-top: 25px;
+}
+
+.reviews-info {
+  height: 280px;
+  background: #ffff;
+  position: relative;
+}
+
+.reviews-info-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 97px;
+  margin: auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.reviews-info-block-photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  margin-top: -50px;
+  margin-bottom: 9px;
+}
+
+.reviews-info-block-name {
+  color: #EC1F46;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  font-family: "Mulish", sans-serif;
+  margin-bottom: 10px;
+}
+
+.reviews-info-block-date {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+  font-family: "Mulish", sans-serif;
+  margin-bottom: 4px;
+}
+
+.reviews-info-text {
+  width: 537px;
+  height: 114px;
+  text-align: justify;
+  margin: auto;
+  margin-top: 32px;
+  font-size: 12px;
+  font-family: "Mulish", sans-serif;
+  line-height: 160%;
+}
+
+.reviews-button {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  z-index: 99;
+}
+
+.reviews-button--prev {
+  top: 0;
+  left: -171px;
+  bottom: 110px;
+}
+
+.reviews-button--next {
+  top: 0;
+  right: -171px;
+  bottom: 110px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
