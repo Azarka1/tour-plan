@@ -312,6 +312,7 @@ a {
   background: #F5FAFE;
   display: block;
   width: auto;
+  padding-bottom: 70px;
 }
 
 .slider-own {
@@ -594,7 +595,7 @@ a {
   width: auto;
   background: #F5FAFE;
   padding-top: 40px;
-  padding-bottom: 70px;
+  padding-bottom: 60px;
   position: relative;
 }
 
@@ -1354,6 +1355,18 @@ template {
 }
 
 @media screen and (max-width: 1140px) {
+  .slider-main {
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider-main {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
   .slider-own {
     width: 88%;
     -ms-flex-wrap: wrap;
@@ -1469,7 +1482,7 @@ template {
 
 @media screen and (max-width: 1140px) {
   .subscribe-text {
-    width: 88%;
+    width: 93%;
   }
 }
 
@@ -1525,6 +1538,26 @@ template {
   .reviews-next {
     top: 190px;
     right: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reviews-h3 {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reviews-info-text {
+    width: 455px;
+    height: 133px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reviews-info-block-photo {
+    margin-top: -50px;
   }
 }
 
