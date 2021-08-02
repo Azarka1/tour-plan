@@ -1,0 +1,69 @@
+.activities
+  padding: 60px 0 98px 0
+  background: $color-bg
+.activities-conteiner
+  width: 1110px
+  margin: auto
+  &-title
+    font-weight: bold
+    font-size: 24px
+    line-height: 30px
+    text-transform: uppercase
+    font-family: $type-text
+    margin-bottom: 57px
+.activities-wrap
+  width: 1110px
+  display: flex
+  justify-content: space-between
+  margin: auto
+.card
+  display: flex
+  flex-wrap: wrap
+  flex-direction: column
+  align-items: flex-start
+  padding: 24px 26px
+  position: relative
+  width: 255px
+  height: 255px
+  border-radius: 6px
+  overflow: hidden
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%)
+    z-index: 1
+  &-img
+    position: absolute
+    border-radius: 6px
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    object-fit: cover
+    z-index: 0
+    width: 100%
+    height: 100%
+  &-h3
+    margin-top: auto
+    z-index: 2
+    color: white
+    font-weight: bold
+    font-size: 16px
+    line-height: 20px
+    font-family: $type-text
+    margin-bottom: 18px
+  &-button
+    background: $color_red
+    color: white
+    font-family: $type-text
+    padding: 7px 22px
+    font-size: 12px
+    line-height: 16px
+    border: none
+    cursor: pointer
+    border-radius: 4px
+    z-index: 1

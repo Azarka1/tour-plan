@@ -738,6 +738,106 @@ a {
   margin-bottom: 130px;
 }
 
+.activities {
+  padding: 60px 0 98px 0;
+  background: #F5FAFE;
+}
+
+.activities-conteiner {
+  width: 1110px;
+  margin: auto;
+}
+
+.activities-conteiner-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-family: "Mulish", sans-serif;
+  margin-bottom: 57px;
+}
+
+.activities-wrap {
+  width: 1110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 24px 26px;
+  position: relative;
+  width: 255px;
+  height: 255px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  z-index: 1;
+}
+
+.card-img {
+  position: absolute;
+  border-radius: 6px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-h3 {
+  margin-top: auto;
+  z-index: 2;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Mulish", sans-serif;
+  margin-bottom: 18px;
+}
+
+.card-button {
+  background: #ec1f46;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  padding: 7px 22px;
+  font-size: 12px;
+  line-height: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 1;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1425,6 +1525,68 @@ template {
   .reviews-next {
     top: 190px;
     right: 250px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    width: 340px;
+    height: 255px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card {
+    width: 340px;
+    height: 255px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .activities-conteiner {
+    width: 88%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .activities-conteiner {
+    width: 88%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .activities-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 88%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .activities-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 88%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .activities-conteiner-title {
+    margin-left: 45px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .activities-conteiner-title {
+    margin-left: 35px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .activities-conteiner-title {
+    margin-left: 21px;
   }
 }
 /*# sourceMappingURL=style.css.map */
