@@ -344,7 +344,7 @@ a {
 .swiper-container::after {
   content: '';
   position: absolute;
-  width: 728px;
+  width: inherit;
   height: 100%;
   top: 0;
   right: 0;
@@ -353,6 +353,13 @@ a {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
   background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
   z-index: 10;
+}
+
+.swiper-slider-img {
+  width: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
 }
 
 .swiper-slide {
@@ -1292,13 +1299,20 @@ template {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .main-article {
+    padding-top: 0;
+    padding-bottom: 36px;
+  }
+}
+
 @media screen and (max-width: 1140px) {
   .main-article-conteiner {
     width: 88%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .main-article-right {
     display: none;
   }
@@ -1311,7 +1325,7 @@ template {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .main-article-left-flesh {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
@@ -1319,7 +1333,7 @@ template {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .main-article-stars {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
@@ -1327,7 +1341,7 @@ template {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .main-article-group {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1336,13 +1350,13 @@ template {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .main-article-left {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .main-article-left-h {
     width: 100%;
   }
@@ -1356,48 +1370,65 @@ template {
 
 @media screen and (max-width: 1140px) {
   .slider-main {
-    padding-bottom: 30px;
+    padding-bottom: 60px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .slider-main {
-    padding-bottom: 40px;
+    padding-bottom: 34px;
   }
 }
 
 @media screen and (max-width: 1140px) {
   .slider-own {
-    width: 88%;
+    width: 91%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slider-own {
+    width: 88%;
   }
 }
 
 @media screen and (max-width: 1140px) {
   .slider-conteiner {
     margin-right: 0;
-    width: 700px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slider-conteiner {
+    padding-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 1140px) {
   .swiper-container {
-    width: 88%;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .swiper-container {
     height: 180px;
     width: 280px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .swiper-slide img {
-    width: 88%px;
-    height: 180px;
+@media screen and (max-width: 1140px) {
+  .swiper-slider-img {
+    width: inherit;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slider-img {
+    width: inherit;
   }
 }
 
@@ -1406,14 +1437,14 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 728px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 1140px) and (max-width: 768px) {
+@media screen and (max-width: 1140px) and (max-width: 767px) {
   .card-map {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1426,14 +1457,17 @@ template {
   .view {
     margin-right: 20px;
     width: 340px;
+    margin-bottom: 0;
   }
 }
 
-@media screen and (max-width: 1140px) and (max-width: 768px) {
+@media screen and (max-width: 1140px) and (max-width: 767px) {
   .view {
     width: 279px;
     height: 210px;
     margin-right: 0px;
+    margin-bottom: 27px;
+    padding: 29px 21px;
   }
 }
 
@@ -1445,7 +1479,7 @@ template {
   width: auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .view-button {
     padding: 0;
     width: 235px;
@@ -1455,12 +1489,12 @@ template {
 
 @media screen and (max-width: 1140px) {
   .map-big {
-    width: 340px;
-    height: 210px;
+    width: 100%;
+    height: 100%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .map-big {
     width: 280px;
     height: 172px;
@@ -1474,9 +1508,10 @@ template {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .map {
-    width: 340px;
+    width: 100%;
+    height: 173px;
   }
 }
 
@@ -1486,7 +1521,7 @@ template {
   }
 }
 
-@media screen and (max-width: 1140px) and (max-width: 768px) {
+@media screen and (max-width: 1140px) and (max-width: 767px) {
   .subscribe-text {
     width: 88%;
     -webkit-box-orient: vertical;
@@ -1496,66 +1531,66 @@ template {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    padding: 72px 0 83px 0;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .subscribe-text-info {
     margin-bottom: 37px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .subscribe-text-info span {
     font-size: 30px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .subscribe-text-info h2 {
     font-size: 20px;
     font-weight: 300;
-    margin-bottom: 5px;
+    margin-bottom: 0;
     margin-top: 0;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .subscribe-input {
     width: 215px;
-    padding: 18px 131px 19px 33px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .reviews-prev {
     top: 190px;
     left: 250px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .reviews-next {
     top: 190px;
     right: 250px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .reviews-h3 {
     font-size: 30px;
     margin-bottom: 50px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .reviews-info-text {
     width: 455px;
     height: 133px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .reviews-info-block-photo {
     margin-top: -50px;
   }
