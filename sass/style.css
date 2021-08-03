@@ -312,7 +312,7 @@ a {
   background: #F5FAFE;
   display: block;
   width: auto;
-  padding-bottom: 70px;
+  padding-bottom: 35px;
 }
 
 .slider-own {
@@ -536,7 +536,7 @@ a {
 }
 
 .subscribe-text {
-  padding: 98px 0 87px 0;
+  padding: 86px 0 90px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -561,9 +561,8 @@ a {
 
 .subscribe-text-info span {
   font-style: normal;
-  font-weight: 600;
   font-size: 36px;
-  line-height: 45px;
+  line-height: 3px;
   text-transform: uppercase;
   color: #FFFFFF;
 }
@@ -711,13 +710,13 @@ a {
 }
 
 .reviews-prev {
-  top: 300px;
-  left: 120px;
+  top: 292px;
+  left: 183px;
 }
 
 .reviews-next {
-  top: 300px;
-  right: 120px;
+  top: 292px;
+  right: 183px;
 }
 
 .text {
@@ -747,7 +746,7 @@ a {
 }
 
 .activities {
-  padding: 60px 0 98px 0;
+  padding: 48px 0 98px 0;
   background: #F5FAFE;
 }
 
@@ -1437,9 +1436,9 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     width: 100%;
   }
 }
@@ -1517,7 +1516,17 @@ template {
 
 @media screen and (max-width: 1140px) {
   .subscribe-text {
-    width: 93%;
+    width: 91%;
+    padding: 73px 0 99px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 
@@ -1577,13 +1586,6 @@ template {
 }
 
 @media screen and (max-width: 767px) {
-  .reviews-h3 {
-    font-size: 30px;
-    margin-bottom: 50px;
-  }
-}
-
-@media screen and (max-width: 767px) {
   .reviews-info-text {
     width: 455px;
     height: 133px;
@@ -1598,17 +1600,29 @@ template {
 
 @media screen and (max-width: 1200px) {
   .card {
-    width: 340px;
-    height: 255px;
+    width: 488px;
+    height: 316px;
     margin-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 992px) {
   .card {
-    width: 340px;
+    width: 339px;
     height: 255px;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    margin-bottom: 22px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card-button {
+    padding: 5px 21px;
   }
 }
 
@@ -1620,7 +1634,7 @@ template {
 
 @media screen and (max-width: 992px) {
   .activities-conteiner {
-    width: 88%;
+    width: 91%;
   }
 }
 
@@ -1629,6 +1643,21 @@ template {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 88%;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .activities-wrap {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -1648,13 +1677,187 @@ template {
 
 @media screen and (max-width: 768px) {
   .activities-conteiner-title {
-    margin-left: 35px;
+    margin-left: 0;
   }
 }
 
 @media screen and (max-width: 460px) {
   .activities-conteiner-title {
-    margin-left: 21px;
+    margin-left: 2px;
   }
+}
+
+@media screen and (max-width: 1140px) {
+  .reviews-main {
+    width: 579px;
+    height: 344px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .vector-ri {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .vector-le {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .reviews-info-text {
+    width: 455px;
+    height: 133px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .reviews-info-block-photo {
+    margin-top: -45px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .reviews-next {
+    top: 300px;
+    right: 198px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .reviews-prev {
+    top: 300px;
+    left: 198px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reviews-next {
+    top: 286px;
+    right: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reviews-prev {
+    top: 286px;
+    left: 35px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .reviews-main {
+    width: 279px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .reviews-info {
+    height: 483px;
+    margin-top: 63px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .text {
+    width: 281px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 36px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .reviews-info-block {
+    margin-left: 59px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .reviews-info-block {
+    margin-bottom: 22px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .reviews-info-text {
+    width: 219px;
+    height: 266px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .reviews-next {
+    top: 156px;
+    right: 57px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .reviews-prev {
+    top: 156px;
+    left: 53px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .reviews-h3 {
+    margin-bottom: 41px;
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .reviews-h3 {
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    width: 245px;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .reviews {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .activities {
+    padding: 45px 0 98px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .activities {
+    padding-top: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .activities-conteiner-title {
+    margin-bottom: 43px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 0px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .activities-conteiner-title {
+    font-size: 24px;
+    text-align: left;
+  }
+}
+
+.activities-wrap {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
