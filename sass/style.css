@@ -199,7 +199,7 @@ a {
 
 .main-article {
   background: #F5FAFE;
-  padding-top: 23px;
+  padding-top: 31px;
   padding-bottom: 20px;
 }
 
@@ -396,7 +396,10 @@ a {
 .view {
   width: 350px;
   height: 210px;
-  padding: 28px;
+  padding-top: 30px;
+  padding-left: 24px;
+  padding-bottom: 0px;
+  padding-right: 24px;
   background: #0A223D;
   color: #FFFFFF;
   border-radius: 8px;
@@ -514,6 +517,11 @@ a {
   border-radius: 10px;
 }
 
+a[href^="tel:"] {
+  text-decoration: none;
+  color: white;
+}
+
 .subscribe {
   width: 100%;
   background-image: url(../img/subcsribe.jpg);
@@ -562,7 +570,7 @@ a {
 .subscribe-text-info span {
   font-style: normal;
   font-size: 36px;
-  line-height: 3px;
+  line-height: 33px;
   text-transform: uppercase;
   color: #FFFFFF;
 }
@@ -762,6 +770,7 @@ a {
   text-transform: uppercase;
   font-family: "Mulish", sans-serif;
   margin-bottom: 57px;
+  line-height: 30px;
 }
 
 .activities-wrap {
@@ -1294,7 +1303,7 @@ template {
 
 @media screen and (max-width: 1140px) {
   .bread-conteiner {
-    width: 88%;
+    width: 91%;
   }
 }
 
@@ -1307,7 +1316,7 @@ template {
 
 @media screen and (max-width: 1140px) {
   .main-article-conteiner {
-    width: 88%;
+    width: 91%;
   }
 }
 
@@ -1546,7 +1555,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .subscribe-text-info {
-    margin-bottom: 37px;
+    margin-bottom: 46px;
   }
 }
 
@@ -1608,7 +1617,7 @@ template {
 
 @media screen and (max-width: 992px) {
   .card {
-    width: 339px;
+    width: 330px;
     height: 255px;
     margin-bottom: 20px;
   }
@@ -1628,7 +1637,7 @@ template {
 
 @media screen and (max-width: 1200px) {
   .activities-conteiner {
-    width: 88%;
+    width: 91%;
   }
 }
 
@@ -1684,6 +1693,8 @@ template {
 @media screen and (max-width: 460px) {
   .activities-conteiner-title {
     margin-left: 2px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -1843,10 +1854,12 @@ template {
 
 @media screen and (max-width: 767px) {
   .activities-conteiner-title {
-    margin-bottom: 43px;
+    margin-top: 0;
+    margin-bottom: 33px;
     font-weight: bold;
     font-size: 18px;
     line-height: 0px;
+    line-height: 30px;
   }
 }
 
@@ -1854,6 +1867,7 @@ template {
   .activities-conteiner-title {
     font-size: 24px;
     text-align: left;
+    line-height: 30px;
   }
 }
 
