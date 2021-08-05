@@ -544,7 +544,7 @@ a[href^="tel:"] {
 }
 
 .subscribe-text {
-  padding: 86px 0 90px 0;
+  padding: 98px 0 87px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -560,11 +560,17 @@ a[href^="tel:"] {
   position: relative;
 }
 
+.subscribe-text-info {
+  height: 75px;
+}
+
 .subscribe-text-info h2 {
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
   color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 5px;
 }
 
 .subscribe-text-info span {
@@ -1561,7 +1567,7 @@ template {
 @media screen and (max-width: 1140px) {
   .subscribe-text {
     width: 91%;
-    padding: 73px 0 99px 0;
+    padding: 92px 0 93px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1584,7 +1590,7 @@ template {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding: 72px 0 83px 0;
+    padding: 72px 0 74px 0;
   }
 }
 
@@ -1612,20 +1618,6 @@ template {
 @media screen and (max-width: 767px) {
   .subscribe-input {
     width: 215px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .reviews-prev {
-    top: 190px;
-    left: 250px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .reviews-next {
-    top: 190px;
-    right: 250px;
   }
 }
 
@@ -1767,16 +1759,44 @@ template {
 }
 
 @media screen and (max-width: 1140px) {
+  .reviews-prev {
+    top: 300px;
+    left: 198px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .reviews-prev {
+    top: 300px;
+    left: 57px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reviews-prev {
+    top: 286px;
+    left: 35px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .reviews-prev {
+    top: 148px;
+    left: 53px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
   .reviews-next {
     top: 300px;
     right: 198px;
   }
 }
 
-@media screen and (max-width: 1140px) {
-  .reviews-prev {
+@media screen and (max-width: 992px) {
+  .reviews-next {
     top: 300px;
-    left: 198px;
+    right: 57px;
   }
 }
 
@@ -1787,10 +1807,10 @@ template {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .reviews-prev {
-    top: 286px;
-    left: 35px;
+@media screen and (max-width: 767px) {
+  .reviews-next {
+    top: 148px;
+    right: 57px;
   }
 }
 
@@ -1804,7 +1824,7 @@ template {
 @media screen and (max-width: 767px) {
   .reviews-info {
     height: 483px;
-    margin-top: 63px;
+    margin-top: 56px;
   }
 }
 
@@ -1825,7 +1845,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .reviews-info-block {
-    margin-bottom: 22px;
+    margin-bottom: 7px;
   }
 }
 
@@ -1833,34 +1853,6 @@ template {
   .reviews-info-text {
     width: 219px;
     height: 266px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .reviews-next {
-    top: 156px;
-    right: 57px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .reviews-next {
-    top: 300px;
-    right: 57px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .reviews-prev {
-    top: 156px;
-    left: 53px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .reviews-prev {
-    top: 300px;
-    left: 57px;
   }
 }
 
