@@ -1636,22 +1636,22 @@ template {
 
 @media screen and (max-width: 1200px) {
   .card {
-    width: 488px;
+    width: 48%;
     height: 316px;
     margin-bottom: 20px;
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .card {
-    width: 330px;
+    width: 340px;
     height: 255px;
-    margin-bottom: 20px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
   .card {
+    width: 322px;
     margin-bottom: 22px;
   }
 }
@@ -1711,9 +1711,28 @@ template {
   }
 }
 
+@media screen and (max-width: 1140px) {
+  .activities-conteiner-title {
+    font-size: 24px;
+    text-align: left;
+    line-height: 30px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .activities-conteiner-title {
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .activities-conteiner-title {
+    margin-top: 0;
+    margin-bottom: 33px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 0px;
+    line-height: 30px;
   }
 }
 
@@ -1890,25 +1909,6 @@ template {
 @media screen and (max-width: 767px) {
   .activities {
     padding-top: 40px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .activities-conteiner-title {
-    margin-top: 0;
-    margin-bottom: 33px;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 0px;
-    line-height: 30px;
-  }
-}
-
-@media screen and (max-width: 1140px) {
-  .activities-conteiner-title {
-    font-size: 24px;
-    text-align: left;
-    line-height: 30px;
   }
 }
 
