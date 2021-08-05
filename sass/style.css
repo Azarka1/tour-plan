@@ -1423,6 +1423,12 @@ template {
 
 @media screen and (max-width: 767px) {
   .swiper-container {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .swiper-container {
     height: 180px;
     width: 280px;
   }
@@ -1435,6 +1441,12 @@ template {
 }
 
 @media screen and (max-width: 767px) {
+  .swiper-slider-img {
+    width: inherit;
+  }
+}
+
+@media screen and (max-width: 555px) {
   .swiper-slider-img {
     width: inherit;
   }
@@ -1454,6 +1466,15 @@ template {
 
 @media screen and (max-width: 1140px) and (max-width: 767px) {
   .card-map {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 1140px) and (max-width: 555px) {
+  .card-map {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1470,6 +1491,13 @@ template {
 }
 
 @media screen and (max-width: 1140px) and (max-width: 767px) {
+  .view {
+    margin-right: 15px;
+    height: 208px;
+  }
+}
+
+@media screen and (max-width: 1140px) and (max-width: 555px) {
   .view {
     width: 279px;
     height: 210px;
@@ -1503,6 +1531,13 @@ template {
 }
 
 @media screen and (max-width: 767px) {
+  .map-big {
+    width: 209px;
+    height: 208px;
+  }
+}
+
+@media screen and (max-width: 555px) {
   .map-big {
     width: 280px;
     height: 172px;
