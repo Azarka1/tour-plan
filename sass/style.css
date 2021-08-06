@@ -1418,6 +1418,7 @@ template {
 @media screen and (max-width: 767px) {
   .slider-conteiner {
     padding-bottom: 20px;
+    text-align: -webkit-center;
   }
 }
 
@@ -1429,7 +1430,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .swiper-container {
-    width: 500px;
+    width: 100%;
   }
 }
 
@@ -1485,6 +1486,9 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1538,7 +1542,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .map-big {
-    width: 209px;
+    width: 100%;
     height: 208px;
   }
 }
@@ -1561,6 +1565,7 @@ template {
   .map {
     width: 100%;
     height: 173px;
+    text-align: center;
   }
 }
 
