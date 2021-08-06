@@ -703,7 +703,6 @@ a[href^="tel:"] {
 .reviews-info-text {
   width: 537px;
   height: 114px;
-  text-align: justify;
   margin-left: auto;
   margin-right: auto;
   margin-top: 32px;
@@ -1601,7 +1600,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .subscribe-text-info {
-    margin-bottom: 46px;
+    margin-bottom: 37px;
   }
 }
 
