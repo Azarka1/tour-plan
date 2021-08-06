@@ -1715,6 +1715,14 @@ template {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .activities-wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .activities-conteiner-title {
     margin-left: 45px;
