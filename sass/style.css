@@ -199,7 +199,7 @@ a {
 
 .main-article {
   background: #F5FAFE;
-  padding-top: 31px;
+  padding-top: 24px;
   padding-bottom: 20px;
 }
 
@@ -241,7 +241,7 @@ a {
 
 .main-article-left-flesh {
   font-size: 10px;
-  line-height: 20px;
+  line-height: 13px;
   border-radius: 3px;
   background: #ec1f46;
   padding: 4px 9px;
@@ -1320,8 +1320,20 @@ template {
 }
 
 @media screen and (max-width: 1140px) {
+  .main-article {
+    padding-top: 24px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
   .main-article-conteiner {
     width: 91%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-article-conteiner {
+    width: 88%;
   }
 }
 
