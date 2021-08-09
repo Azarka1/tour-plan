@@ -1678,6 +1678,22 @@ template {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .add-one {
+    -webkit-box-ordinal-group: -3;
+        -ms-flex-order: -4;
+            order: -4;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .add-two {
+    -webkit-box-ordinal-group: -2;
+        -ms-flex-order: -3;
+            order: -3;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .card-button {
     padding: 5px 21px;
@@ -1693,6 +1709,12 @@ template {
 @media screen and (max-width: 992px) {
   .activities-conteiner {
     width: 91%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .activities-conteiner {
+    width: 88%;
   }
 }
 
