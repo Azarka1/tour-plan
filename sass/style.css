@@ -914,6 +914,7 @@ a[href^="tel:"] {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: footer-information;
+  margin-right: 94px;
 }
 
 .footer-legal {
@@ -935,6 +936,9 @@ a[href^="tel:"] {
   -ms-grid-column-span: 2;
   grid-area: footer-social;
   margin-bottom: 89px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .footer-social img {
@@ -969,6 +973,8 @@ a[href^="tel:"] {
   line-height: 23px;
   font-family: "Mulish", sans-serif;
   text-transform: uppercase;
+  margin-bottom: 34px;
+  margin-top: 0;
   color: #FFFFFF;
 }
 
@@ -1065,8 +1071,16 @@ a[href^="tel:"] {
   margin-right: 81px;
 }
 
+.footer-contact-text a {
+  text-decoration: none;
+  color: #BDBDBD;
+  cursor: pointer;
+}
+
 .footer-contact-text img {
   margin-right: 19px;
+  width: 23px;
+  height: 23px;
 }
 
 .footer-send-massage {
@@ -1118,6 +1132,13 @@ a[href^="tel:"] {
 
 .footer-contact-phones {
   display: inline-table;
+}
+
+.footer-contact-text-general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 22px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
