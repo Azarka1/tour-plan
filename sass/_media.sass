@@ -229,7 +229,7 @@
   @media screen and ( max-width: 768px )
     width: 339px
     height: 255px
-  @media screen and ( max-width: 756px )
+  @media screen and ( max-width: 767px )
     width: 48%
   @media screen and ( max-width: 600px )
     width: 322px
@@ -383,12 +383,25 @@
     padding-bottom: 60px
   &-wrap
     width: 100%
+.footer
+  @media screen and ( max-width: 1140px )
+    padding-top: 88px
 .footer-wrap
   @media screen and ( max-width: 1140px )
     grid-template-areas: "footer-h2 footer-social footer-social" "footer-all-categories footer-information footer-legal""footer-contact footer-contact footer-contact" "footer-send footer-send footer-send"
     grid-row: 4fr
     grid-column: 3fr
     width: 91%
+    margin-bottom: 56px
+.footer-wrap h2
+  @media screen and ( max-width: 1140px )
+    font-size: 17px
+    line-height: 23px
+.footer-top-logo
+  @media screen and ( max-width: 1140px )
+    width: 104px
+    font-size: 40px
+    line-height: 40px
 .footer-container
   @media screen and ( max-width: 1140px )
     margin: auto
@@ -398,15 +411,21 @@
     font-size: 40.0964px
     line-height: 40px
     margin-bottom: 38px
+    padding-top: 0
+.footer-information
+  @media screen and ( max-width: 1140px )
+    margin-right: 38px
 .footer-social
   @media screen and ( max-width: 1140px )
     height: 24px
-    align-items: center
-    margin-top: 121px
-    margin-left: 82px
+    align-items: end
+    margin-top: 57px
+    margin-left: 0
+    margin-bottom: 87px
 .footer-all-categories
   @media screen and ( max-width: 1140px )
     margin-bottom: 61px
+    margin-right: 38px
 .footer-contact
   @media screen and ( max-width: 1140px )
     margin-bottom: 60px
@@ -426,9 +445,9 @@
     margin-top: 0
 .footer-add
   @media screen and ( max-width: 1140px )
-    justify-content: end
-    width: 91%
-    display: -webkit-box
+    width: 100%
+    display: inline-flex
+    align-items: center
 .footer
   @media screen and ( max-width: 767px )
     padding-top: 69px
@@ -437,7 +456,7 @@
     grid-template-areas: "footer-h2" "footer-social" "footer-legal" "footer-information" "footer-all-categories""footer-contact" "footer-send"
     grid-row: 7fr
     grid-column: 1fr
-    width: 91%
+    width: 100%
     margin-bottom: 30px
 .footer-add
   @media screen and ( max-width: 450px )
@@ -462,6 +481,10 @@
   @media screen and ( max-width: 767px )
     width: 100%
     margin: auto
+    margin-top: 20px
+.footer-contact-text img
+  @media screen and ( max-width: 767px )
+    margin-right: 7px
 .footer-send
   @media screen and ( max-width: 767px )
     width: 100%
@@ -493,6 +516,10 @@
     flex-direction: column
     align-items: end
 .footer-add ul
+  @media screen and ( max-width: 1140px )
+    margin-right: 36%
+
+.footer-add ul
   @media screen and ( max-width: 767px )
     margin-right: 0
     margin-left: 0
@@ -511,6 +538,3 @@
     width: 100%
     display: flex
     align-items: flex-start
-.img-map
-  @media screen and ( max-width: 767px )
-    margin-left: 5px
