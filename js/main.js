@@ -18,10 +18,10 @@ const reviews = new Swiper('.reviews-main', {
   },
   });
 
-var menuButton = document.querySelector(".header-top-menu-burger-visible");
+var menuButton = document.querySelector(".header-top-menu-burger");
 menuButton.addEventListener("click", function() {
 console.log("Клик по кнопке");
 document
-.querySelector(".header-navigation-visible")
-.classList.toggle(".header-navigator-conteiner");
+.querySelector(".header-navigation-conteiner")
+.classList.toggle(".header-navigation-conteiner--visible");
 });
