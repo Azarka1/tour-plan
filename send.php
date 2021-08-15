@@ -54,5 +54,6 @@ else {$result = "error";}
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
 
+
 // Отображение результата
 header('location: thankyou.php');

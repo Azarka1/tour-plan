@@ -91,8 +91,10 @@
       </div>
     </div>
     <section class="main-article">
+      <div class="main-article-conteiner">
 <h2>Thank you for your attention!</h2>
 <h3>Our manager call you as soon as possible</h3>
+</div>
 </section>
     <section class="footer">
       <div class="footer-container">
