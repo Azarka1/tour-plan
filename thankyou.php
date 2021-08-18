@@ -21,7 +21,7 @@
         <div class="header-top">
           <div class="header-top-logo-search">
             <div class="header-top__logo">
-              <a href="#"
+              <a href="index.html"
                 ><span class="logo-black">Best </span
                 ><span class="logo-red">tour </span
                 ><span class="logo-black">plan</span>
@@ -94,6 +94,7 @@
       <div class="main-article-conteiner">
 <h2>Thank you for your attention!</h2>
 <h3>Our manager call you as soon as possible</h3>
+<button class="footer-send-button"><a href="index.html">На главную</a></button>
 </div>
 </section>
     <section class="footer">
@@ -101,7 +102,7 @@
         <div class="footer-wrap">
           <div class="footer-h2">
             <div class="footer-top-logo">
-              <a href="#"
+              <a href="index.html"
                 ><span class="logo-white">Best </span
                 ><span class="logo-red">tour </span
                 ><span class="logo-white">plan</span>

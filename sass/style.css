@@ -1130,6 +1130,10 @@ a[href^="tel:"] {
 .footer-h2 {
   text-align: center;
   padding-top: 31px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: footer-h2;
 }
 
 .footer-contact-phones {
@@ -1141,6 +1145,10 @@ a[href^="tel:"] {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 22px;
+}
+
+.footer-send-form {
+  margin-top: 34px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -2319,10 +2327,17 @@ template {
   }
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 767px) {
   .footer-container {
     margin: auto;
     width: 88%;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .footer-container {
+    margin: auto;
+    width: 91%;
   }
 }
 
@@ -2338,7 +2353,6 @@ template {
 @media screen and (max-width: 1140px) {
   .footer-information {
     margin-right: 38px;
-    margin-top: 20px;
   }
 }
 
@@ -2358,7 +2372,6 @@ template {
   .footer-all-categories {
     margin-bottom: 61px;
     margin-right: 38px;
-    margin-top: 20px;
   }
 }
 
@@ -2581,6 +2594,12 @@ template {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-send-form {
+    margin-top: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */

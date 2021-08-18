@@ -23,5 +23,5 @@ menuButton.addEventListener("click", function() {
 console.log("Клик по кнопке");
 document
 .querySelector(".header-navigation-conteiner")
-.classList.toggle(".header-navigation-conteiner--visible");
+.classList.toggle("header-navigation-conteiner--visible");
 });
