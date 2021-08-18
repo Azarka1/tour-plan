@@ -3,7 +3,11 @@
   padding-bottom: 40px
   width: 1110px
   margin: auto
-
+.header-navigator-conteiner
+  background: #0A223D
+.header-navigation
+  width: 91%
+  margin: auto
 .header-top
   display: flex
   justify-content: space-between
@@ -55,11 +59,24 @@ a
     border-radius: 0 6px 6px 0
     position: absolute
     right: 0
-
+.user_show
+  display: none
 .user
   display: flex
   justify-content: space-between
-
+  &-img
+    display: inline-block
+    border-radius: 50%
+    overflow: hidden
+    width: 40px
+    height: 40px
+    margin-right: 18px
+.user-href
+  display: flex
+  align-items: center
+  font-family: $type-text
+.search-show
+  display: none
   &-href
     display: flex
     align-items: center
@@ -82,16 +99,14 @@ a
     font-size: 14px
     color: $color_text
 
-.header-navigation
-  margin: auto
-  background: #0A223D
-.conteiner
+.header-list
   display: flex
   justify-content: space-between
   align-items: center
   margin: auto
-  width: 1110px
-  height: 80px
+  max-width: 1110px
+  list-style: none
+  padding: 22px 47px
 
 .nav-link
   color: white

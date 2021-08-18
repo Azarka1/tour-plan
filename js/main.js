@@ -1,4 +1,6 @@
-const swiper = new Swiper('.swiper-container', {
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    const swiper = new Swiper('.swiper-container', {
   // Optional parameters
     loop: true,
   // Navigation arrows
@@ -22,6 +24,7 @@ var menuButton = document.querySelector(".header-top-menu-burger");
 menuButton.addEventListener("click", function() {
 console.log("Клик по кнопке");
 document
-.querySelector(".header-navigation-conteiner")
-.classList.toggle("header-navigation-conteiner--visible");
+.querySelector(".header-navigator-conteiner")
+.classList.toggle("header-navigator-conteiner--visible");
 });
+  });

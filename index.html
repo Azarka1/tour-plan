@@ -65,19 +65,54 @@
         <!--header-top-->
       </div>
       <!--header-conteiner-->
-      <div
-        class="header-navigator-conteiner header-navigation-conteiner--visible"
-      >
+      <div class="header-navigator-conteiner">
         <nav class="header-navigation">
-          <div class="conteiner">
-            <a href="#" class="nav-link">All Deals</a>
-            <a href="#" class="nav-link">Hotels</a>
-            <a href="#" class="nav-link">Activities</a>
-            <a href="#" class="nav-link">Hotel Day Packages</a>
-            <a href="#" class="nav-link">Restaurants</a>
-            <a href="#" class="nav-link">Events</a>
-            <a href="#" class="nav-link">Rodrigues</a>
+          <div class="user_show">
+            <a href="#" class="user-show-href"
+              ><span class="user-show-img"
+                ><img
+                  src="img/user.jpg"
+                  class="user-show-photo"
+                  alt="Фото пользователя"
+              /></span>
+              <span class="user-show-name">Nothan</span>
+            </a>
           </div>
+          <!--user-show-->
+
+          <form class="search-show">
+            <input
+              type="text"
+              class="search-show__input"
+              placeholder="Search Location"
+            />
+            <button class="search__button">
+              <img src="img/group29.png" class="search__img" alt="Фото лупы" />
+            </button>
+          </form>
+          <ul class="header-list">
+            <li class="header-list__item">
+              <a href="#" class="nav-link">All Deals</a>
+            </li>
+            <li class="header-list__item">
+              <a href="#" class="nav-link">Hotels</a>
+            </li>
+            <li class="header-list__item">
+              <a href="#" class="nav-link">Activities</a>
+            </li>
+            <li class="header-list__item">
+              <a href="#" class="nav-link">Hotel Day Packages</a>
+            </li>
+            <li class="header-list__item">
+              <a href="#" class="nav-link">Restaurants</a>
+            </li>
+            <li class="header-list__item">
+              <a href="#" class="nav-link">Events</a>
+            </li>
+            <li class="header-list__item">
+              <a href="#" class="nav-link">Rodrigues</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -467,9 +502,15 @@
           </div>
           <div class="footer-social">
             <h2>Social Network</h2>
-            <img src="img/facebook.svg" alt="social" />
-            <img src="img/youtube.svg" alt="social" />
-            <img src="img/instagram.svg" alt="social" />
+            <a href="https://www.facebook.com/">
+              <img src="img/facebook.svg" alt="social"
+            /></a>
+            <a href="https://www.youtube.com/"
+              ><img src="img/youtube.svg" alt="social"
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img src="img/instagram.svg" alt="social"
+            /></a>
             <!--/footer-social-->
           </div>
           <div class="footer-contact">
@@ -556,6 +597,7 @@
       </div>
       <!--/footer-->
     </section>
+
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/test.js"></script>
