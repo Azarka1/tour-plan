@@ -340,6 +340,16 @@ a {
   width: 389px;
 }
 
+.send-button-special {
+  margin-top: 23px;
+  padding: 17px 65px;
+  background: #ec1f46;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
 .slider-main {
   background: #F5FAFE;
   display: block;
@@ -2614,6 +2624,12 @@ template {
 @media screen and (max-width: 1140px) {
   .footer-send-two {
     width: 539px;
+  }
+}
+
+@media screen and (max-width: 1140px) and (max-width: 767px) {
+  .footer-send-two {
+    width: unset;
   }
 }
 

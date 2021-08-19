@@ -94,7 +94,7 @@
       <div class="main-article-conteiner">
 <h2>Thank you for your attention!</h2>
 <h3>Our manager call you as soon as possible</h3>
-<button class="footer-send-button"><a href="index.html">На главную</a></button>
+<a href="index.html" class="send-button-special">На главную</a>
 </div>
 </section>
     <section class="footer">
