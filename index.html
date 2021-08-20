@@ -227,7 +227,10 @@
               >
               <!--/view-quick-->
             </div>
-            <button class="view-button">View Other Options</button>
+            <button data-toggle="modal" class="view-button">
+              View Other Options
+            </button>
+
             <!--/view-->
           </div>
           <div class="map">
@@ -597,7 +600,55 @@
       </div>
       <!--/footer-->
     </section>
+    <div class="modal">
+      <div class="modal__overlay">
+        <div class="modal-send">
+          <!--/modal-send-->
+          <!--/modal-general-->
+        </div>
+      </div>
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="img close" class="modal-img" />
+        </a>
+        <h2>Booking</h2>
+        <form action="send.php" method="POST" class="modal-send-form">
+          <div class="modal-send-first">
+            <input
+              class="modal-send-name modal-input"
+              placeholder="Your Full Name*"
+              name="name"
+            />
+            <input
+              class="modal-send-phone modal-input"
+              placeholder="Phone Number*"
+              name="phone"
+            />
+            <input
+              class="modal-send-email modal-input"
+              placeholder="Email*"
+              name="email"
+            />
+            <!--/modal-send-first-->
+          </div>
 
+          <input
+            class="modal-send-massage"
+            placeholder="Message"
+            name="massage"
+          />
+
+          <div class="modal-send-two">
+            <button class="modal-send-button">Send</button>
+            <span>* Required Fields</span>
+            <!--/modal-send-two-->
+          </div>
+        </form>
+        <!--/modal_-dialog-->
+      </div>
+      <!--/modal-->
+    </div>
+    <script src="js/js.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/test.js"></script>
