@@ -981,6 +981,7 @@ a[href^="tel:"] {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  margin-top: 18px;
 }
 
 .footer-social img {
@@ -1673,7 +1674,7 @@ template {
 @media screen and (max-width: 680px) {
   .header-navigator-conteiner {
     display: none;
-    top: 0px;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -2629,7 +2630,7 @@ template {
 
 @media screen and (max-width: 1140px) {
   .footer-send {
-    width: 92%;
+    width: 91%;
   }
 }
 
@@ -2641,7 +2642,7 @@ template {
 
 @media screen and (max-width: 1140px) and (max-width: 767px) {
   .footer-send-two {
-    width: unset;
+    width: 91%;
   }
 }
 
@@ -2716,7 +2717,7 @@ template {
 @media screen and (max-width: 767px) {
   .footer-contact {
     margin-bottom: 31px;
-    width: 50%;
+    width: 91%;
   }
 }
 
@@ -2731,12 +2732,6 @@ template {
 @media screen and (max-width: 767px) {
   .footer-contact-text img {
     margin-right: 7px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .footer-send {
-    width: 57%;
   }
 }
 
