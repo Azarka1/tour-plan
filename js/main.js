@@ -28,16 +28,7 @@ document
 .querySelector(".header-navigator-conteiner")
 .classList.toggle("header-navigator-conteiner--visible");
 });
-  });
-
-var menuButton = document.querySelector(".menu_botton");
-menuBotton.addEventListener("click", function(){
-console.log("Клик по крестику");
-document
-.querySelector(".navbar_botton")
-.classList.toggle("navbar_botton--visible");
 });
-
 
 var modalButton = $("[data-toggle=modal]");
 var closeModalButton = $(".modal__close");
