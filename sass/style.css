@@ -1248,6 +1248,7 @@ a[href^="tel:"] {
 .modal__dialog h2 {
   text-transform: uppercase;
   text-align: center;
+  font-size: 18px;
 }
 
 .modal-input {
@@ -1266,6 +1267,7 @@ a[href^="tel:"] {
   padding-top: 18px;
   margin-bottom: 15px;
   border: none;
+  border-radius: 4px;
 }
 
 .modal-send-two {
@@ -1298,6 +1300,11 @@ a[href^="tel:"] {
   right: 0;
   left: 0;
   bottom: 0;
+}
+
+.modal-send-form {
+  font-size: 12px;
+  line-height: 15px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1696,6 +1703,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 0;
   }
 }
 
@@ -1823,7 +1831,7 @@ template {
             justify-content: flex-start;
     position: relative;
     height: 40px;
-    width: 81%;
+    width: 80%;
     margin: auto;
     margin-bottom: 39px;
     -webkit-box-pack: center;
@@ -1840,7 +1848,7 @@ template {
     font-family: "Mulish", sans-serif;
     border-radius: 6px 0 0 6px;
     padding-left: 18px;
-    width: 81%;
+    width: 98%;
   }
 }
 
@@ -2840,6 +2848,41 @@ template {
 @media screen and (max-width: 767px) {
   .footer-send-form {
     margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal__dialog {
+    padding: 20px 20px;
+    max-width: 96%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal-input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal-send-massage {
+    width: 100%;
+    border-radius: 4px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal-send-two {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal-send-two button {
+    margin-bottom: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
