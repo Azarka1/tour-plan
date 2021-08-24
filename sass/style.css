@@ -1833,7 +1833,7 @@ template {
             justify-content: flex-start;
     position: relative;
     height: 40px;
-    width: 80%;
+    width: 76%;
     margin: auto;
     margin-bottom: 39px;
     -webkit-box-pack: center;
@@ -1850,7 +1850,7 @@ template {
     font-family: "Mulish", sans-serif;
     border-radius: 6px 0 0 6px;
     padding-left: 18px;
-    width: 98%;
+    width: 97%;
   }
 }
 
