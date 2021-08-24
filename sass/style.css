@@ -1675,6 +1675,8 @@ template {
     right: 0;
     z-index: 99;
     background: white;
+    max-height: 100%;
+    overflow: auto;
   }
 }
 
@@ -2855,6 +2857,8 @@ template {
   .modal__dialog {
     padding: 20px 20px;
     max-width: 96%;
+    overflow: auto;
+    max-height: 100%;
   }
 }
 
@@ -2868,6 +2872,7 @@ template {
   .modal-send-massage {
     width: 100%;
     border-radius: 4px;
+    padding-bottom: 90px;
   }
 }
 
