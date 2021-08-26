@@ -981,7 +981,7 @@ a[href^="tel:"] {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  margin-top: 18px;
+  margin-top: 23px;
 }
 
 .footer-social img {
@@ -1021,6 +1021,7 @@ a[href^="tel:"] {
   text-transform: uppercase;
   margin-top: 0;
   color: #FFFFFF;
+  margin-bottom: 0;
 }
 
 .footer-add {
@@ -1038,6 +1039,7 @@ a[href^="tel:"] {
   list-style-type: none;
   list-style: none;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .footer-all-categories-ul {
