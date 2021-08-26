@@ -48,3 +48,4 @@ var modalDialog = $(".modal__dialog");
 modalOverlay.removeClass("modal__overlay--visible");
 modalDialog.removeClass("modal__dialog--visible");
 }
+

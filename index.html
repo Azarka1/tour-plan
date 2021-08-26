@@ -255,13 +255,16 @@
           <span>Newsletter</span>
           <!--/subscribe-text-info-->
         </div>
-        <form class="subscribe-form" action="send.php" method="POST">
-          <input
-            type="text"
-            class="subscribe-input"
-            placeholder="Your email address"
-            name="subscribe"
-          />
+        <form class="subscribe-form form" action="send.php" method="POST">
+          <div class="subscribe-input-group">
+            <input
+              type="text"
+              class="subscribe-input"
+              placeholder="Your email address"
+              name="subscribe"
+              required
+            />
+          </div>
           <button class="subscribe-button">
             <span>Send</span>
           </button>
@@ -556,18 +559,25 @@
           </div>
           <div class="footer-send">
             <h2>Send us a message</h2>
-            <form action="send.php" method="POST" class="footer-send-form">
+            <form action="send.php" method="POST" class="footer-send-form form">
               <div class="footer-send-first">
-                <input
-                  class="footer-send-name"
-                  placeholder="Your Full Name*"
-                  name="name"
-                />
-                <input
-                  class="footer-send-phone"
-                  placeholder="Phone Number*"
-                  name="phone"
-                />
+                <div class="subscribe-input-group">
+                  <input
+                    class="footer-send-name"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="subscribe-input-group special">
+                  <input
+                    class="footer-send-phone"
+                    id="phone"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    required
+                  />
+                </div>
                 <!--/footer-send-first-->
               </div>
 
@@ -612,22 +622,27 @@
           <img src="img/close.svg" alt="img close" class="modal-img" />
         </a>
         <h2>Booking</h2>
-        <form action="send.php" method="POST" class="modal-send-form">
+        <form action="send.php" method="POST" class="modal-send-form form">
           <div class="modal-send-first">
             <input
               class="modal-send-name modal-input"
               placeholder="Your Full Name*"
               name="name"
+              required
+              minlength="2"
             />
             <input
               class="modal-send-phone modal-input"
+              type="phone"
               placeholder="Phone Number*"
               name="phone"
+              required
             />
             <input
               class="modal-send-email modal-input"
               placeholder="Email*"
               name="email"
+              required
             />
             <!--/modal-send-first-->
           </div>
@@ -651,6 +666,8 @@
     <script src="js/3_5.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/maskedinput.js"></script>
     <script src="js/test.js"></script>
   </body>
 </html>

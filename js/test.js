@@ -37,3 +37,31 @@ function rollReviews() {
     reviewsLine.style.transform = 'translate(-' + count * width + 'px)';
 
 }
+
+//Валидация формы
+$('.form').each(function() {
+$(this).validate({
+    errorClass: "invalid",
+    messages: {
+    name: {
+       required: "Enter your name",
+       minlength: "Name is more 2 symbols"
+    },
+    email: {
+      required: "Enter your e-mail",
+      email: "Your email address must be in the format of name@domain.com"
+    },
+    phone: {
+        required: "Enter your phone nomber"
+    },
+  },
+});
+});
+
+jQuery(function($){
+   $("#phone").mask("+7(999) 999-9999");
+});
+
+jQuery(function($){
+   $("input[type='phone']").mask("+7(999) 999-9999");
+});
