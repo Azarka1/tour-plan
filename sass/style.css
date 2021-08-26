@@ -2590,17 +2590,19 @@ template {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .footer-container {
-    margin: auto;
-    width: 88%;
-  }
-}
-
 @media screen and (max-width: 1140px) {
   .footer-container {
     margin: auto;
     width: 91%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-container {
+    margin: auto;
+    width: 84%;
+    margin-left: 20px;
+    margin-right: 21px;
   }
 }
 
@@ -2622,6 +2624,7 @@ template {
 @media screen and (max-width: 767px) {
   .footer-information {
     margin-bottom: 30px;
+    margin-right: 0;
   }
 }
 
@@ -2639,7 +2642,7 @@ template {
 
 @media screen and (max-width: 1140px) {
   .footer-all-categories {
-    margin-bottom: 61px;
+    margin-bottom: 73px;
     margin-right: 38px;
   }
 }
@@ -2660,6 +2663,12 @@ template {
 @media screen and (max-width: 1140px) {
   .footer-send {
     width: 92%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-send {
+    width: 100%;
   }
 }
 
@@ -2746,7 +2755,7 @@ template {
 @media screen and (max-width: 767px) {
   .footer-contact {
     margin-bottom: 31px;
-    width: 91%;
+    width: 100%;
   }
 }
 
@@ -2839,6 +2848,7 @@ template {
 @media screen and (max-width: 767px) {
   .footer-all-categories {
     margin-bottom: 33px;
+    margin-right: 0;
   }
 }
 
@@ -2870,6 +2880,12 @@ template {
 @media screen and (max-width: 767px) {
   .footer-send-form {
     margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .footer-all-categories-ul {
+    margin-bottom: 0;
   }
 }
 
