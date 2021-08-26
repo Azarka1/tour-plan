@@ -2892,7 +2892,7 @@ template {
 @media screen and (max-width: 767px) {
   .modal__dialog {
     padding: 20px 20px;
-    max-width: 96%;
+    width: 90%;
     overflow: auto;
     max-height: 90%;
   }
@@ -2918,6 +2918,8 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 90%;
+    margin: auto;
   }
 }
 
