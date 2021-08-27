@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
       rel="stylesheet"
     />
+
     <title>Best tour plan - Hotel Booking</title>
   </head>
   <body>
@@ -262,7 +263,7 @@
         <form class="subscribe-form form" action="send.php" method="POST">
           <div class="subscribe-input-group">
             <input
-              type="text"
+              type="email"
               class="subscribe-input"
               placeholder="Your email address"
               name="subscribe"
@@ -584,7 +585,7 @@
                 <div class="subscribe-input-group special">
                   <input
                     class="footer-send-phone"
-                    id="phone"
+                    type="tel"
                     placeholder="Phone Number*"
                     name="phone"
                     required
@@ -658,10 +659,13 @@
             />
             <input
               class="modal-send-email modal-input"
-              placeholder="Email*"
+              type="email"
               name="email"
+              pattern="/^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i"
+              placeholder="Email*"
               required
             />
+            <div class="help-email"></div>
             <!--/modal-send-first-->
           </div>
 
