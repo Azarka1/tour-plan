@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link href="css/aos.css" rel="stylesheet" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -364,7 +365,11 @@
       <div class="activities-conteiner">
         <h3 class="activities-conteiner-title">Other Activities</h3>
         <div class="activities-wrap">
-          <div class="card add-one">
+          <div
+            class="card add-one"
+            data-aos="flip-right"
+            data-aos-duration="1500"
+          >
             <img
               src="img/activity-1.jpg"
               alt="The curious corner of chamarel"
@@ -377,7 +382,7 @@
             <button class="card-button" data-toggle="modal">Book Now</button>
             <!--/card-->
           </div>
-          <div class="card">
+          <div class="card" data-aos="flip-right" data-aos-duration="1500">
             <img
               src="img/activity-2.jpg"
               alt="Gymkhana club golf course"
@@ -390,7 +395,11 @@
             <button class="card-button" data-toggle="modal">Book Now</button>
             <!--/card-->
           </div>
-          <div class="card add-two">
+          <div
+            class="card add-two"
+            data-aos="flip-right"
+            data-aos-duration="1500"
+          >
             <img
               src="img/activity-3.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -403,7 +412,7 @@
             <button class="card-button" data-toggle="modal">Book Now</button>
             <!--/card-->
           </div>
-          <div class="card">
+          <div class="card" data-aos="flip-right" data-aos-duration="1500">
             <img
               src="img/activity-4.jpg"
               alt="The blue marine discovery quest"
@@ -425,7 +434,7 @@
     <section class="footer">
       <div class="footer-container">
         <div class="footer-wrap">
-          <div class="footer-h2">
+          <div class="footer-h2" data-aos="zoom-in">
             <div class="footer-top-logo">
               <a href="index.html"
                 ><span class="logo-white">Best </span
@@ -591,7 +600,13 @@
               />
 
               <div class="footer-send-two">
-                <button class="footer-send-button">Send</button>
+                <button
+                  class="footer-send-button"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                >
+                  Send
+                </button>
                 <span>* Required Fields</span>
                 <!--/footer-send-two-->
               </div>
@@ -671,6 +686,7 @@
     <script src="js/main.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/maskedinput.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/test.js"></script>
   </body>
 </html>
