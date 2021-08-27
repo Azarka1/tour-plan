@@ -1,0 +1,92 @@
+.header-conteiner
+  @media screen and ( max-width: 1140px )
+    width: 91%
+    padding-bottom: 30px
+    padding-top: 30px
+  @media screen and ( max-width: 480px )
+    width: 88%
+
+.header-top
+  &__logo
+    @media screen and ( max-width:992px )
+      margin-right: 47px
+      font-size: 18px
+      @media screen and ( max-width: 480px )
+        font-size: 13px
+        margin-right: 0
+  &-menu-burger
+    @media screen and ( max-width: 680px )
+      display: flex
+      width: 16px
+      height: 11px
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
+      cursor: pointer
+      color: black
+      background: inherit
+      border: none
+      &-line
+        @media screen and ( max-width: 680px )
+          width: 16px
+          height: 1px
+          background: $color_text
+
+.search
+  @media screen and ( max-width:992px )
+    width: 340px
+    @media screen and ( max-width:680px )
+      display: none
+
+.user
+  @media screen and ( max-width:680px )
+    display: none
+  &-img
+
+.header-navigator-conteiner
+  @media screen and ( max-width: 680px )
+    display: none
+.conteiner
+  @media screen and ( max-width: 1140px )
+    width: 91%
+    font-size: 14px
+    height: 60px
+
+.nav-link
+  @media screen and ( max-width: 870px )
+    font-size: 12px
+    @media screen and ( max-width: 768px )
+      font-weight: none
+
+.bread-conteiner
+  @media screen and ( max-width: 1140px )
+    width: 91%
+.main-article-conteiner
+  @media screen and ( max-width: 1140px )
+    width: 91%
+.main-article-right
+  @media screen and ( max-width: 1140px )
+    display: none
+.main-article-left-description
+  @media screen and ( max-width: 480px )
+    white-space: none
+    width: 100%
+.main-article-left-flesh
+  @media screen and ( max-width: 1140px )
+    order: -1
+    margin-bottom: 10px
+.main-article-stars
+  @media screen and ( max-width: 1140px )
+    flex-basis: auto
+    width: auto
+    margin-bottom: 16px
+.main-article-group
+  @media screen and ( max-width: 1140px )
+    justify-content: space-between
+    width: 100%
+.main-article-left
+  @media screen and ( max-width: 1140px )
+    width: 100%
+.main-article-left-h
+  @media screen and ( max-width: 1140px )
+    width: 100%

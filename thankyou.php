@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link href="css/aos.css" rel="stylesheet" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="sass/style.css" type="text/css" />
@@ -13,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
       rel="stylesheet"
     />
+
     <title>Best tour plan - Hotel Booking</title>
   </head>
   <body>
@@ -65,19 +69,54 @@
         <!--header-top-->
       </div>
       <!--header-conteiner-->
-      <div
-        class="header-navigator-conteiner header-navigation-conteiner--visible"
-      >
+      <div class="header-navigator-conteiner">
         <nav class="header-navigation">
-          <div class="conteiner">
-            <a href="#" class="nav-link">All Deals</a>
-            <a href="#" class="nav-link">Hotels</a>
-            <a href="#" class="nav-link">Activities</a>
-            <a href="#" class="nav-link">Hotel Day Packages</a>
-            <a href="#" class="nav-link">Restaurants</a>
-            <a href="#" class="nav-link">Events</a>
-            <a href="#" class="nav-link">Rodrigues</a>
+          <div class="user-show">
+            <a href="#" class="user-show-href"
+              ><span class="user-show-img"
+                ><img
+                  src="img/user.jpg"
+                  class="user-show-photo"
+                  alt="Фото пользователя"
+              /></span>
+              <span class="user-show-name">Nothan</span>
+            </a>
           </div>
+          <!--user-show-->
+
+          <form class="search-show">
+            <input
+              type="text"
+              class="search-show__input"
+              placeholder="Search Location"
+            />
+            <button class="search__button">
+              <img src="img/group29.png" class="search__img" alt="Фото лупы" />
+            </button>
+          </form>
+          <ul class="header-list">
+            <li class="header-list__item">
+              <a href="#" class="nav-link">All Deals</a>
+            </li>
+            <li class="header-list__item">
+              <a href="#" class="nav-link">Hotels</a>
+            </li>
+            <li class="header-list__item">
+              <a href="#" class="nav-link">Activities</a>
+            </li>
+            <li class="header-list__item">
+              <a href="#" class="nav-link">Hotel Day Packages</a>
+            </li>
+            <li class="header-list__item">
+              <a href="#" class="nav-link">Restaurants</a>
+            </li>
+            <li class="header-list__item">
+              <a href="#" class="nav-link">Events</a>
+            </li>
+            <li class="header-list__item">
+              <a href="#" class="nav-link">Rodrigues</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -97,10 +136,10 @@
 <a href="index.html" class="send-button-special">На главную</a>
 </div>
 </section>
-    <section class="footer">
+ <section class="footer">
       <div class="footer-container">
         <div class="footer-wrap">
-          <div class="footer-h2">
+          <div class="footer-h2" data-aos="zoom-in">
             <div class="footer-top-logo">
               <a href="index.html"
                 ><span class="logo-white">Best </span
@@ -186,9 +225,15 @@
           </div>
           <div class="footer-social">
             <h2>Social Network</h2>
-            <img src="img/facebook.svg" alt="social" />
-            <img src="img/youtube.svg" alt="social" />
-            <img src="img/instagram.svg" alt="social" />
+            <a href="https://www.facebook.com/">
+              <img src="img/facebook.svg" alt="social"
+            /></a>
+            <a href="https://www.youtube.com/"
+              ><img src="img/youtube.svg" alt="social"
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img src="img/instagram.svg" alt="social"
+            /></a>
             <!--/footer-social-->
           </div>
           <div class="footer-contact">
@@ -231,18 +276,25 @@
           </div>
           <div class="footer-send">
             <h2>Send us a message</h2>
-            <form action="send.php" method="POST">
+            <form action="send.php" method="POST" class="footer-send-form form">
               <div class="footer-send-first">
-                <input
-                  class="footer-send-name"
-                  placeholder="Your Full Name*"
-                  name="name"
-                />
-                <input
-                  class="footer-send-phone"
-                  placeholder="Phone Number*"
-                  name="phone"
-                />
+                <div class="subscribe-input-group">
+                  <input
+                    class="footer-send-name"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="subscribe-input-group special">
+                  <input
+                    class="footer-send-phone"
+                    type="tel"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    required
+                  />
+                </div>
                 <!--/footer-send-first-->
               </div>
 
@@ -253,7 +305,13 @@
               />
 
               <div class="footer-send-two">
-                <button class="footer-send-button">Send</button>
+                <button
+                  class="footer-send-button"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                >
+                  Send
+                </button>
                 <span>* Required Fields</span>
                 <!--/footer-send-two-->
               </div>
@@ -275,8 +333,12 @@
       </div>
       <!--/footer-->
     </section>
+   <script src="js/3_5.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/test.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/maskedinput.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/thanks.js"></script>
   </body>
 </html>

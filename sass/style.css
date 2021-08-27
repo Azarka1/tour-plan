@@ -200,6 +200,10 @@ a {
   display: none;
 }
 
+.header-list__item a:hover {
+  color: #f3f3f3;
+}
+
 .bread {
   display: block;
   background: #F5FAFE;
@@ -570,6 +574,14 @@ a {
 a[href^="tel:"] {
   text-decoration: none;
   color: white;
+}
+
+.view-quick a:hover {
+  color: #f19dc4;
+}
+
+.view button:hover {
+  color: #0A223D;
 }
 
 .subscribe {
@@ -1060,6 +1072,22 @@ a[href^="tel:"] {
   margin-bottom: 0;
 }
 
+.footer-information-li a:hover {
+  color: #ffffff;
+}
+
+.footer-all-categories-li a:hover {
+  color: #ffffff;
+}
+
+.footer-legal-li a:hover {
+  color: #ffffff;
+}
+
+.footer-contact-text-general a:hover {
+  color: #ffffff;
+}
+
 .footer-all-categories-ul {
   list-style-type: none;
   padding: 0;
@@ -1100,6 +1128,10 @@ a[href^="tel:"] {
 .footer-href {
   text-decoration: none;
   color: #BDBDBD;
+}
+
+.footer-add ul a:hover {
+  color: #ffffff;
 }
 
 .footer-send-name {
@@ -1172,6 +1204,10 @@ a[href^="tel:"] {
   color: white;
   border-radius: 4px;
   border: none;
+}
+
+.footer-send-two button:hover {
+  color: #0A223D;
 }
 
 .footer-send-two {
@@ -1934,6 +1970,10 @@ template {
 @media screen and (max-width: 767px) {
   .main-article-conteiner {
     width: 88%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -2906,6 +2946,60 @@ template {
 @media screen and (max-width: 1140px) {
   .footer-all-categories-ul {
     margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer-information-li a:hover {
+    color: inherit;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer-all-categories-li a:hover {
+    color: inherit;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer-legal-li a:hover {
+    color: inherit;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer-contact-text-general a:hover {
+    color: inherit;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer-add ul a:hover {
+    color: #BDBDBD;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer-send-two button:hover {
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header-list__item a:hover {
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .view-quick a:hover {
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .view button:hover {
+    color: #ffffff;
   }
 }
 
