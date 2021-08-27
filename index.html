@@ -267,6 +267,7 @@
               class="subscribe-input"
               placeholder="Your email address"
               name="subscribe"
+              pattern = "/^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,6}\.)?[a-z]{2,6}$/i"
               required
             />
           </div>
@@ -665,7 +666,6 @@
               placeholder="Email*"
               required
             />
-            <div class="help-email"></div>
             <!--/modal-send-first-->
           </div>
 

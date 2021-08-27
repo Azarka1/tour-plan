@@ -42,6 +42,12 @@ function rollReviews() {
 $('.form').each(function() {
 $(this).validate({
     errorClass: "invalid",
+    rules: {
+'email': {
+  required: true,
+  email: true,
+pattern: true,
+}},
     messages: {
     name: {
        required: "Enter your name",

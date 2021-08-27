@@ -9,7 +9,6 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 $massage = $_POST['massage'];
 
-
 // Формирование самого письма
 $title = "С сайта Best Tour Plan";
 $body = "
